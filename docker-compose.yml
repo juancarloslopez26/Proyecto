@@ -12,11 +12,7 @@ services:
     volumes:
       - mongo-data:/data/db
       - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js 
-  redis:
-    image: redis:latest
-    restart: always
-    ports:
-      - 6379:6379
+ 
   app:
     build: .
     restart: always
@@ -24,19 +20,11 @@ services:
       - '4001:4001'
     depends_on:
       - db
-      -  redis
+     
 
     volumes:
       - mongo-data:/app
   
-  mongo-seed:
-    image: mongo:latest
-    depends_on:
-      - db
-    volumes:
-      - ./jugadores.json:/jugadores.json
-    entrypoint: >
-      bash -c "mongoimport --host db --db test --collection Jugadores --authenticationDatabase admin --username root --password example --file /jugadores.json --jsonArray"
-
+  
 volumes:
   mongo-data:             # Asegúrate de definir el volumen aquí

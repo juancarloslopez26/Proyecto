@@ -3,25 +3,14 @@ const connectDB = require('./db');
 const swaggerUi = require('swagger-ui-express');
 const swaggerJsDoc = require('swagger-jsdoc');
 const Stats = require('./stats');
-const redis = require('redis');
+
 const app = express();
 app.use(express.json());
 const port = 4001;
 connectDB();
 
 // Configuración de Redis
-const redisClient = redis.createClient({
-    host: 'localhost',
-    port: 6379
-  });
-  
-  redisClient.on('error', (err) => {
-    console.error('Error en Redis:', err);
-  });
-  
-  redisClient.on('connect', () => {
-    console.log('Conectado a Redis');
-  });
+
 
 const swaggerOptions = {
   definition: {

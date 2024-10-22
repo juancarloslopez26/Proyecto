@@ -1,6 +1,6 @@
 const fs = require('fs');
 const MongoClient = require('mongodb').MongoClient;
-const url = 'mongodb://root:example@fifa-db-1:27017/';
+const url = 'mongodb://root:example@proyecto-db-1:27017/';
 const dbName = 'test'; 
 const collectionName = 'jugadores';
 

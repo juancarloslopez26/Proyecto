@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const connectDB = async()=>{
     try {
-        await mongoose.connect('mongodb://root:example@fifa-db-1:27017/',
+        await mongoose.connect('mongodb://root:example@proyecto-db-1:27017/',
             { useNewUrlParser: true, 
             useUnifiedTopology: true });
         
