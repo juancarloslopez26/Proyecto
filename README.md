@@ -24,3 +24,28 @@ Asegúrate de que el puerto **4001** esté libre en tu sistema.
 
    ```bash
    git clone https://github.com/tu-usuario/FifaStatsApi.git
+
+2. Cambia al directorio del proyecto:
+
+   ```bash
+   cd FifaStatsApi
+3. Instala las dependencias de Node.js:
+   ```bash
+   npm install
+5. Construye y levanta los contenedores usando Docker Compose:
+   ```bash
+   docker-compose build
+   docker-compose up -d
+### Uso
+1. Para verificar los endpoints y la documentación de Swagger, ingresa a:
+   ```bash
+   http://localhost:4001/api-docs
+### Detener los contenedores
+Si deseas detener los contenedores, borrar el volumen utilizado y eliminar la imagen construida localmente, ejecuta:
+   ```bash
+   docker-compose down --rmi local -v
+
+
+
+
+
