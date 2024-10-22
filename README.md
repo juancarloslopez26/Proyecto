@@ -23,12 +23,12 @@ Asegúrate de que el puerto **4001** esté libre en tu sistema.
 1. Clona este repositorio en el directorio de tu preferencia:
 
    ```bash
-   git clone https://github.com/tu-usuario/FifaStatsApi.git
+   git clone https://github.com/juancarloslopez26/Proyecto.git
 
 2. Cambia al directorio del proyecto:
 
    ```bash
-   cd FifaStatsApi
+   cd Proyecto
 3. Instala las dependencias de Node.js:
    ```bash
    npm install
