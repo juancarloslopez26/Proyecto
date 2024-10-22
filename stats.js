@@ -1,7 +1,8 @@
-const e = require('express');
+
 const mongoose =  require('mongoose');
 
 const statsSchema =  new mongoose.Schema({
+       
         Nombre: { 
         type: String,
         required: true

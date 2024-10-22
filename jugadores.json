@@ -1,0 +1,46 @@
+[
+    {
+      
+      "Nombre": "Lionel Messi",
+      "Edad": 36,
+      "Nacionalidad": "Argentina",
+      "Equipo": "Inter Miami",
+      "Valor": 50000000
+    },
+    {
+      "Nombre": "Cristiano Ronaldo",
+      "Edad": 39,
+      "Nacionalidad": "Portugal",
+      "Equipo": "Al-Nassr",
+      "Valor": 40000000
+    },
+    {
+        "Nombre": "Kylian Mbappé",
+        "Edad": 25,
+        "Nacionalidad": "Francia",
+        "Equipo": "Paris Saint-Germain",
+        "Valor": 180000000
+      },
+      {
+        "Nombre": "Erling Haaland",
+        "Edad": 23,
+        "Nacionalidad": "Noruega",
+        "Equipo": "Manchester City",
+        "Valor": 200000000
+      },
+      {
+        "Nombre": "Neymar Jr.",
+        "Edad": 32,
+        "Nacionalidad": "Brasil",
+        "Equipo": "Al-Hilal",
+        "Valor": 70000000
+      },
+      {
+        "Nombre": "Kevin De Bruyne",
+        "Edad": 33,
+        "Nacionalidad": "Bélgica",
+        "Equipo": "Manchester City",
+        "Valor": 85000000
+      }
+  ]
+  
